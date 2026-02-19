@@ -22,6 +22,15 @@ header h1 {
 header h1 a {
     color: #3a3630;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.site-logo {
+    height: 4rem;
+    width: auto;
+    margin: -1rem 0;
 }
 
 main {
