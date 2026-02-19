@@ -13,7 +13,7 @@ body {
 
 header {
     border-bottom: 1px solid #d5cfc5;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 1rem 25%;
 }
 
 header h1 {
@@ -40,7 +40,7 @@ header h1 a {
     color: #7a756b;
     font-size: 0.95rem;
     margin-top: 0.15rem;
-    padding-left: 7.5rem;
+    padding-left: 9.5rem;
 }
 
 /* Main content */
