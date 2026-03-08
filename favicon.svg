@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="gL" cx="38%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#e8e8e8"/>
+      <stop offset="45%" stop-color="#c0c0c0"/>
+      <stop offset="100%" stop-color="#888888"/>
+    </radialGradient>
+    <radialGradient id="gR" cx="42%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#f4f4f4"/>
+      <stop offset="45%" stop-color="#d0d0d0"/>
+      <stop offset="100%" stop-color="#999999"/>
+    </radialGradient>
+    <clipPath id="cL"><circle cx="24" cy="32" r="20"/></clipPath>
+    <clipPath id="cR"><circle cx="40" cy="32" r="20"/></clipPath>
+  </defs>
+  <!-- Left coin (Mercury — behind) -->
+  <circle cx="24" cy="32" r="20" fill="url(#gL)" stroke="#777" stroke-width="0.75"/>
+  <!-- Right coin (FDR — in front), clipped to not overdraw left coin's stroke -->
+  <circle cx="40" cy="32" r="20" fill="url(#gR)" stroke="#999" stroke-width="0.75"/>
+  <!-- Re-draw left coin edge where FDR overlaps, so Mercury reads as behind -->
+  <path d="M 24,12 A 20,20 0 0,0 24,52" fill="none" stroke="#777" stroke-width="0.75" clip-path="url(#cR)"/>
+  <!-- Subtle rim highlight on FDR -->
+  <circle cx="40" cy="32" r="20" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" clip-path="url(#cR)"/>
+</svg>
