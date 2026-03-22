@@ -3,6 +3,9 @@
 body {
     font-family: Georgia, 'Times New Roman', serif;
     background-color: #f5f0e8;
+    background-image: url('/img/parchment-speckle.jpg');
+    background-repeat: repeat;
+    background-size: 512px 512px;
     color: #3a3630;
     min-height: 100vh;
     display: flex;
