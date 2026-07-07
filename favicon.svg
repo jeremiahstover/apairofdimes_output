@@ -13,9 +13,9 @@
     <clipPath id="cL"><circle cx="24" cy="32" r="20"/></clipPath>
     <clipPath id="cR"><circle cx="40" cy="32" r="20"/></clipPath>
   </defs>
-  <!-- Left coin (Mercury — behind) -->
+  <!-- Left coin (Mercury - behind) -->
   <circle cx="24" cy="32" r="20" fill="url(#gL)" stroke="#777" stroke-width="0.75"/>
-  <!-- Right coin (FDR — in front), clipped to not overdraw left coin's stroke -->
+  <!-- Right coin (FDR - in front), clipped to not overdraw left coin's stroke -->
   <circle cx="40" cy="32" r="20" fill="url(#gR)" stroke="#999" stroke-width="0.75"/>
   <!-- Re-draw left coin edge where FDR overlaps, so Mercury reads as behind -->
   <path d="M 24,12 A 20,20 0 0,0 24,52" fill="none" stroke="#777" stroke-width="0.75" clip-path="url(#cR)"/>
